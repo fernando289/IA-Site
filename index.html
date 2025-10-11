@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuro da IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./img/icone.jpg">
+</head>
+
+<body>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    .caixa {
+      justify-content: center;
+      justify-items: center;
+      height: auto;
+      color: white;
+    }
+
+    .caixa p {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 990px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .menu a {
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+
+      .hamburguer {
+        display: block;
+      }
+
+      .menu.ativo {
+        display: flex;
+      }
+
+      #menu-toggle :checked~.menu {
+        display: flex;
+      }
+
+      .menu-toggle:checked~.menu {
+        display: flex;
+      }
+
+      .barras {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+      }
+    }
+  </style>
+  <header class="cabecalho">
+    <div class="logo">Futuro da <span>IA</span></div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-btn">
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <div class="barras"></div>
+    </label>
+    <nav class="menu">
+      <a href="#">Início</a>
+      <a href="./arquivos.html/profissões.html">Profissões</a>
+      <a href="./arquivos.html/segurança.html">Segurança</a>
+      <a href="./arquivos.html/criatividade.html">Criatividade</a>
+      <a href="./arquivos.html/ética.html">Ética</a>
+    </nav>
+  </header>
+  <section class="principal">
+    <div class="fundo">
+      <div class="texto-principal">
+        <h1>Entenda sobre o <span>Futuro da IA</span></h1>
+        <p>Esse é um site que explica um pouco sobre o que vai acontecer no futuro, em relação a algumas áreas</p>
+        <a href="./arquivos.html/criadores.html"><button class="botao">Criadores</button></a>
+      </div>
+    </div>
+  </section>
+  <section class="itens">
+    <h2>As principais áreas que vão ser impactadas pela IA</h2>
+    <div class="caixas-itens">
+      <a href="#teste"><button onclick="saude()">
+          <div class="caixa">Saúde</div>
+        </button></a>
+      <a href="#teste"><button onclick="mercadoTrabalho()">
+          <div class="caixa">Mercado de Trabalho e RH</div>
+        </button></a>
+      <a href="#teste"><button onclick="industriaProducao()">
+          <div class="caixa">Indústria e Produção</div>
+        </button></a>
+      <a href="#teste"><button onclick="educacao()">
+          <div class="caixa">Educação</div>
+        </button></a>
+      <a href="#teste"><button onclick="economiaFinancas()">
+          <div class="caixa">Economia e Finanças</div>
+        </button></a>
+      <a href="#teste"><button onclick="comunicacaoMidia()">
+          <div class="caixa">Comunicação, Mídia e Entretenimento</div>
+        </button></a>
+      <a href="#teste"><button onclick="governoServicosPublicos()">
+          <div class="caixa">Governo e Serviços Públicos</div>
+        </button></a>
+      <a href="#teste"><button onclick="transporteMobilidade()">
+          <div class="caixa">Transporte e Mobilidade</div>
+        </button></a>
+      <a href="#teste"><button onclick="meioAmbienteAgricultura()">
+          <div class="caixa">Meio Ambiente e Agricultura</div>
+        </button></a>
+      <a href="#teste"><button onclick="direitoEtica()">
+          <div class="caixa">Direito e Ética</div>
+        </button></a>
+    </div>
+  </section>
+  <section class="teste" id="teste">
+    <div class="caixa" id="ok" style="width: 100%;">
+      <h3 class="titulo"></h3>
+      <p class="descricao"></p>
+    </div>
+  </section>
+  <footer class="rodape">
+    <p>© 2025 Futuro da IA. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function exibirTextoNaTela(tag, texto, Tag, Texto) {
+      let titulo = document.querySelector(tag);
+      titulo.innerHTML = texto;
+      let descricao = document.querySelector(Tag);
+      descricao.innerHTML = Texto;
+    }
+    function saude() {
+      exibirTextoNaTela('.teste h3', 'Saúde', '.teste p', 'A Inteligência Artificial tem revolucionado a área da saúde ao proporcionar diagnósticos mais rápidos e precisos. Por meio da análise de exames de imagem e dados genéticos, é possível identificar doenças como câncer, problemas cardíacos ou condições raras com maior eficiência. Além disso, a IA permite o desenvolvimento da medicina personalizada, em que os tratamentos são adaptados às necessidades específicas de cada paciente. Outra aplicação importante está no uso de robôs cirúrgicos e assistentes virtuais, que auxiliam médicos durante procedimentos e no acompanhamento clínico. Por fim, a IA também acelera a descoberta de novos medicamentos, reduzindo significativamente o tempo e o custo das pesquisas farmacêuticas.');
+    }
+
+    function mercadoTrabalho() {
+      exibirTextoNaTela('.teste h3', 'Mercado de Trabalho e RH', '.teste p', 'No mercado de trabalho, a IA tem desempenhado um papel transformador ao automatizar tarefas repetitivas e operacionais, liberando os profissionais para atividades mais criativas e estratégicas. No setor de Recursos Humanos, ferramentas inteligentes analisam currículos e entrevistas, tornando os processos de recrutamento mais ágeis e precisos. Além disso, o avanço tecnológico tem gerado novas oportunidades profissionais, com o surgimento de carreiras voltadas para a ética na IA, engenharia de prompts, manutenção de sistemas inteligentes, entre outras funções emergentes.');
+    }
+
+    function industriaProducao() {
+      exibirTextoNaTela('.teste h3', 'Indústria e Produção', '.teste p', 'Na indústria, a aplicação da IA tem tornado os processos produtivos mais eficientes e seguros. A manufatura inteligente, por exemplo, utiliza sensores e algoritmos para detectar falhas antes que as máquinas parem, possibilitando uma manutenção preditiva. A automação avançada também vem ganhando espaço, com robôs industriais mais flexíveis e adaptáveis às demandas de produção. Além disso, a logística se beneficia de sistemas inteligentes que otimizam rotas, reduzem desperdícios e aumentam a produtividade das cadeias de suprimentos.');
+    }
+
+    function educacao() {
+      exibirTextoNaTela('.teste h3', 'Educação', '.teste p', 'Na educação, a IA possibilita uma transformação profunda ao oferecer ensino personalizado, adaptando os conteúdos ao ritmo e estilo de aprendizagem de cada estudante. Ferramentas de correção automática e tutores virtuais auxiliam professores e alunos em tempo real, tornando o aprendizado mais dinâmico e eficiente. Além disso, recursos de tradução e acessibilidade baseados em IA quebram barreiras linguísticas e garantem maior inclusão de estudantes com diferentes necessidades.');
+    }
+
+    function economiaFinancas() {
+      exibirTextoNaTela('.teste h3', 'Economia e Finanças', '.teste p', 'O setor econômico e financeiro tem se beneficiado amplamente da Inteligência Artificial. A análise de dados em larga escala permite identificar padrões de mercado com rapidez, auxiliando na tomada de decisões estratégicas. A automação de investimentos, por meio de robôs traders e sistemas preditivos, oferece maior precisão e agilidade nas operações financeiras. Além disso, ferramentas de IA monitoram transações em tempo real, contribuindo para a detecção de fraudes e para a segurança dos usuários.');
+    }
+    function comunicacaoMidia() {
+      exibirTextoNaTela('.teste h3', 'Comunicação, Mídia e Entretenimento', '.teste p', 'A IA está transformando profundamente a comunicação e o entretenimento. Atualmente, é possível gerar automaticamente textos, imagens, músicas e vídeos com qualidade impressionante. Filmes e jogos se tornam mais realistas e interativos graças a efeitos especiais baseados em IA. Além disso, algoritmos de recomendação personalizam o conteúdo que consumimos em redes sociais e plataformas de streaming, moldando nossas experiências digitais de forma cada vez mais individualizada.');
+    }
+
+    function governoServicosPublicos() {
+      exibirTextoNaTela('.teste h3', 'Governo e Serviços Públicos', '.teste p', 'Na esfera pública, a IA tem potencial para melhorar a eficiência e a qualidade dos serviços oferecidos à população. A análise de grandes volumes de dados permite a criação de políticas públicas mais eficazes e direcionadas. Tecnologias de monitoramento urbano, como câmeras inteligentes e sistemas de controle de tráfego, contribuem para a segurança e a mobilidade nas cidades. Além disso, chatbots e assistentes automatizados facilitam a comunicação entre governos e cidadãos, tornando os atendimentos mais rápidos e acessíveis.');
+    }
+
+    function transporteMobilidade() {
+      exibirTextoNaTela('.teste h3', 'Transporte e Mobilidade', '.teste p', 'No setor de transporte, a IA está por trás de inovações que prometem transformar a mobilidade urbana. Os veículos autônomos são um exemplo claro, capazes de dirigir sozinhos e reduzir significativamente o número de acidentes. Sistemas inteligentes de gestão de trânsito otimizam sinais e rotas, diminuindo congestionamentos. Na logística, drones e caminhões autônomos estão sendo utilizados para realizar entregas de forma mais rápida e eficiente.');
+    }
+
+    function meioAmbienteAgricultura() {
+      exibirTextoNaTela('.teste h3', 'Meio Ambiente e Agricultura', '.teste p', 'A IA tem desempenhado um papel importante na preservação ambiental e no aumento da eficiência agrícola. A chamada agricultura de precisão utiliza dados e algoritmos para orientar irrigação, fertilização e colheita, maximizando a produtividade e reduzindo desperdícios. No campo ambiental, a análise de dados climáticos e imagens de satélite permite monitorar ecossistemas, prever desastres naturais e desenvolver estratégias de proteção. Além disso, sistemas inteligentes ajudam a otimizar o consumo de energia em cidades e indústrias, promovendo a sustentabilidade.');
+    }
+    function direitoEtica() {
+      exibirTextoNaTela('.teste h3', 'Direito e Ética', '.teste p', 'Na área jurídica, a IA está sendo utilizada para agilizar a leitura e organização de grandes volumes de documentos, facilitando o trabalho de advogados e tribunais. Ferramentas inteligentes também auxiliam na previsão de decisões judiciais, oferecendo suporte estratégico para profissionais do direito. Paralelamente, o avanço da IA levanta importantes debates éticos, especialmente relacionados à privacidade, à regulação e aos impactos sociais dessas tecnologias, exigindo atenção e responsabilidade no seu uso.');
+    }
+
+  </script>
+</body>
+
+</html>

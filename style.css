@@ -1,0 +1,156 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00ff80;
+}
+
+.menu a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00ff80;
+}
+
+/* Seção principal */
+.principal {
+  margin-top: 70px;
+  height: 350px;
+  background: url('./img/MediaTek-IA-2023.webp') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-principal {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.texto-principal h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.texto-principal h1 span {
+  color: #00ff80;
+}
+
+.texto-principal p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.botao {
+  background-color: #00ff80;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #00cc66;
+}
+
+/* Serviços */
+.itens {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.itens h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.caixas-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.caixa {
+  background-color: #1a1a1a;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+.caixa:hover {
+  background-color: #00ff80;
+  color: #000;
+}
+
+/* TESTE JS*/
+.teste {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 20px;
+  background-color: #111;
+}
+.teste h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.teste p {
+  font-size: 1rem;
+  max-width: 400px;
+  text-align: left;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a0a0a;
+  font-size: 0.85rem;
+  color: #aaa;
+}

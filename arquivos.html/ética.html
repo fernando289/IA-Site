@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ética - Futuro da IA</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../img/icone.jpg">
+</head>
+
+<body>
+  <style>
+    .principal {
+      background: url('../img/ética.jpg') center/cover no-repeat;
+    }
+
+    .texto {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .caixa {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 990px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      .menu a {
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+
+      .hamburguer {
+        display: block;
+      }
+
+      .menu.ativo {
+        display: flex;
+      }
+
+      #menu-toggle :checked~.menu {
+        display: flex;
+      }
+
+      .menu-toggle:checked~.menu {
+        display: flex;
+      }
+
+      .barras {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+      }
+    }
+  </style>
+  <header class="cabecalho">
+    <div class="logo">Ética - Futuro da <span>IA</span></div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-btn">
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <div class="barras"></div>
+    </label>
+    <nav class="menu">
+      <a href="../index.html">Início</a>
+      <a href="./profissões.html">Profissões</a>
+      <a href="./segurança.html">Segurança</a>
+      <a href="./criatividade.html">Criatividade</a>
+      <a href="./ética.html">Ética</a>
+    </nav>
+  </header>
+  <section class="principal">
+    <div class="fundo">
+      <div class="texto-principal">
+        <h1>Entenda sobre o <span>Futuro da IA</span></h1>
+        <p>Esse é um site que explica um pouco sobre o que vai acontecer no futuro, em relação a algumas áreas</p>
+        <a href="./criadores.html"><button class="botao">Criadores</button></a>
+      </div>
+    </div>
+  </section>
+  <div class="caixa">
+    <div class="texto">
+      <p>Com o avanço da IA, surgem questões éticas fundamentais: Viés algorítmico: Sistemas treinados com dados
+        históricos podem perpetuar discriminação (racial, de gênero, econômica). Transparência: Muitos modelos de IA são
+        "caixas-pretas". É difícil entender como tomam decisões. Privacidade: Coleta e uso massivo de dados pessoais sem
+        consentimento é um risco constante. Responsabilidade: Quem responde por decisões erradas da IA? O criador, o
+        usuário, a empresa? Desigualdade: Acesso desigual à IA pode aumentar o abismo entre países, empresas e classes
+        sociais.</p>
+    </div>
+  </div>
+  <footer class="rodape">
+    <p>© 2025 Futuro da IA. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

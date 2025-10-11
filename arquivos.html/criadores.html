@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criadores - Futuro da IA</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/icone.jpg">
+
+</head>
+
+<body>
+    <style>
+        .criadores {
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .geral {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagemperfil {
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .descrição h4 {
+            margin-top: 15px;
+            font-size: 2rem;
+            text-align: justify;
+            color: black;
+        }
+
+        .imagemperfil li ul {
+            margin-top: 15px;
+            font-size: 2rem;
+            text-align: justify;
+            color: black;
+        }
+
+        .geral .descrição {
+            text-align: center;
+            margin-top: 15px;
+            color: black;
+        }
+
+        @media (max-width: 998px) {
+            .criadores {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagemperfil {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 500px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .menu a {
+                padding: 10px;
+                border-top: 1px solid #444;
+            }
+
+            .hamburguer {
+                display: block;
+            }
+
+            .menu.ativo {
+                display: flex;
+            }
+
+            #menu-toggle :checked~.menu {
+                display: flex;
+            }
+
+            .menu-toggle:checked~.menu {
+                display: flex;
+            }
+
+            .barras {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 4px 0;
+                transition: 0.4s;
+            }
+        }
+    </style>
+    <header class="cabecalho">
+        <div class="logo">Criadores - Futuro da <span>IA</span></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" style="display: none;">
+        <label for="menu-toggle" class="menu-btn">
+            <div class="barras"></div>
+            <div class="barras"></div>
+            <div class="barras"></div>
+        </label>
+        <nav class="menu">
+            <a href="../index.html">Início</a>
+            <a href="./profissões.html">Profissões</a>
+            <a href="./segurança.html">Segurança</a>
+            <a href="./criatividade.html">Criatividade</a>
+            <a href="./ética.html">Ética</a>
+        </nav>
+    </header>
+    <section class="principal">
+        <div class="fundo">
+            <div class="texto-principal">
+                <h1>Entenda sobre o <span>Futuro da IA</span></h1>
+                <p>Esse é um site que explica um pouco sobre o que vai acontecer no futuro, em relação a algumas áreas
+                </p>
+                <a href="#"><button class="botao">Criadores</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="criadores">
+        <div class="geral">
+            <div class="descrição">
+                <h4>Arthur</h4>
+            </div>
+            <div class="imagemperfil">
+                <img src="../img/perfil 1.jpg" alt="" width="300rem">
+                <li>
+                    <br><br><br><br>
+                    <ul>Criador de ideias (design)</ul>
+                    <ul>Pesquisador</ul>
+                </li>
+            </div>
+        </div>
+        <br><br>
+        <div class="geral">
+            <div class="descrição">
+                <h4>Fernando</h4>
+            </div>
+            <div class="imagemperfil">
+                <img src="../img/perfil 2.jpg" alt="" width="300rem">
+                <li>
+                    <br><br><br><br>
+                    <ul>Desenvolvedor</ul>
+                    <ul>Pesquisador</ul>
+                </li>
+            </div>
+        </div>
+        <br><br>
+        <div class="geral">
+            <div class="descrição">
+                <h4>Leonardo</h4>
+            </div>
+            <div class="imagemperfil">
+                <img src="../img/perfil 3.jpg" alt="" width="300rem">
+                <li>
+                    <br><br><br><br>
+                    <ul>Desenvolvedor</ul>
+                    <ul>Pesquisador</ul>
+                </li>
+            </div>
+        </div>
+        <br><br>
+        <div class="geral">
+            <div class="descrição">
+                <h4>Rogério</h4>
+            </div>
+            <div class="imagemperfil">
+                <img src="../img/perfil 4.jpg" alt="" width="300rem">
+                <li>
+                    <br><br><br><br>
+                    <ul>Criador de ideias (design)</ul>
+                    <ul>Pesquisador</ul>
+                </li>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>© 2025 Futuro da IA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
