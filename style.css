@@ -27,25 +27,6 @@ body {
 .logo {
   font-size: 1.4rem;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.logo:hover{
-    transform: scale(1.1);}
-.logo span {
-  color: #00ff80;
-}
-nav a{
-    font-size: 1.8rem;
-    color: rgb(0, 0, 0);
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 03,s ease;
-}
-nav a:hover,
-nav a.active{
-    color: #000000;
-    border-bottom: 3px solid color #000000;
 }
 .menu a {
   color: #fff;
@@ -168,5 +149,6 @@ button {
   font-size: 0.85rem;
   color: #aaa;
 }
+
 
 
