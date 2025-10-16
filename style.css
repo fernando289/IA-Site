@@ -24,17 +24,13 @@ body {
   z-index: 100;
 }
 
-.logo a {
-  text-decoration: none;
-  font-size: 1.5rem;
+.logo {
+  font-size: 1.4rem;
   font-weight: bold;
-  color: white;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.logo a:hover {
+.logo span {
   color: #00ff80;
-  transform: scale(1.05);
 }
 
 .menu a {
@@ -158,6 +154,7 @@ button {
   font-size: 0.85rem;
   color: #aaa;
 }
+
 
 
 
